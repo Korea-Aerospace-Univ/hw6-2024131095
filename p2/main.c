@@ -11,7 +11,7 @@ int main(){
         scanf("%d", p);
     }
 
-    for (int *p==arr2; p < arr2+N; p++){ // 두번째 배열에 숫자 차레로 넣기
+    for (int *p = arr2; p < arr2+N; p++){ // 두번째 배열에 숫자 차레로 넣기
         scanf("%d", p);
     }
 
