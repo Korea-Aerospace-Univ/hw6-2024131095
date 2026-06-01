@@ -18,15 +18,11 @@ int main(){
         scanf("%d", p);
     }
 
-   p2 = arr2 + N -1;
-
-   for (p1 = arr1; p1 < arr1 +N; p1++){
+   for (p1 = arr1, p2 = arr2 + N -1; p1 < arr1 +N; p1++, p2--){
     int sum = *p1 + *p2;
     printf(" %d", sum);
-
-    p2--;
    }
     printf("\n");
-    
+
     return 0;
 }
