@@ -18,17 +18,15 @@ int main(){
         scanf("%d", p);
     }
 
-    p1=arr1; // 첫번째 배열의 맨처음
-    p2=arr2+N-1; // 두번째 배열의 맨끝
+   p2 = arr2 + N -1;
 
-    for (int i=0; i<N; i++){
-        int sum = *p1 + *p2; // 첫배열의 맨처음 + 두번째배열의 맨끝
-        printf(" %d", sum); // 출력시 공백 먼저 출력
+   for (p1 = arr1; p1 < arr1 +N; p1++){
+    int sum = *p1 + *p2;
+    printf(" %d", sum);
 
-        p1++; // 다음 칸으로 이동
-        p2--; // 이전 칸으로 이동
-    }
+    p2--;
+   }
     printf("\n");
-
+    
     return 0;
 }
